@@ -4,15 +4,20 @@ import { font } from "../utils/fonts";
 export const GlobalStyles = {
   labelStyles: {
     fontFamily: font.poppins,
-    fontSize: "13px",
+    fontSize: "16px",
     fontWeight: "400",
     color: colors.black,
   },
   redButton: {
     fontFamily: font.poppins,
     fontSize: "13px",
-    fontWeight: "500",
+    fontWeight: "400",
     color: colors.white,
+    background: colors.red,
+    textTransform: "none",
+    padding: "10px 0px",
+    marginTop: "40px",
+    width: "100%",
   },
   title: {
     fontFamily: font.inter,
@@ -44,16 +49,16 @@ export const GlobalStyles = {
     fontWeight: "500",
     color: colors.white,
   },
-  footerLogo:{
+  footerLogo: {
     fontFamily: font.inter,
     fontSize: "24px",
     fontWeight: "700",
     color: colors.white,
   },
-  footerSubTitle:{
+  footerSubTitle: {
     fontFamily: font.poppins,
     fontSize: "16px",
     fontWeight: "400",
     color: colors.white,
-  }
+  },
 };

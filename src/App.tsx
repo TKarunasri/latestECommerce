@@ -1,13 +1,19 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Home from "./components/home/Home";
+import ProtectedRoute from "./components/protected-rotue/ProtectedRoute";
 import Login from "./pages/login/Login";
 
 function App() {
-  return(
-  <BrowserRouter>
+  return (
+    <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Login/>}/>
+        <Route path="/Login" element={<Login />} />
+        <Route element={<ProtectedRoute />}>
+          <Route path="/" element={<Home />} />
+        </Route>
       </Routes>
-    </BrowserRouter>)
+    </BrowserRouter>
+  );
 }
 
 export default App;
